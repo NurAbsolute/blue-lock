@@ -26,51 +26,56 @@
     display: flex;
     justify-content: space-around;
 }
-.card1 {
-    width: 300px;
-    height: 400px;
-    box-shadow: 0 4px 8px black;
-    text-align: center;
-    border-radius: 8px;
-}
-.card1 img {
-    width: 280px;
-    height: 280px;
-}
-.card1 button {
-    width: 280px;
-    height: 40px;
-    border: none;
-    background-color: green;
-
-    border-radius: 8px;
-}
-.text {
-    display: flex;
-    justify-content: space-around;
-}
-.card2 {
-    width: 300px;
-    height: 400px;
-    box-shadow: 0 4px 8px black;
-    text-align: center;
-    border-radius: 8px;
-}
-.card2 img {
-    width: 280px;
-    height: 280px;
-}
-.card2 button {
-    width: 280px;
-    height: 40px;
-    border: none;
-    background-color: green;
-
-    border-radius: 8px;
-}
-.text {
-    display: flex;
-    justify-content: space-around;
-}
 
 
+/* media queries*/
+
+/* Telefon uchun razmer max. 600px */
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    .card{
+        width: 150px;
+        height: 220px;
+    }
+    .card img {
+        width: 140px;
+        height: 140px;
+    }
+    .card button {
+        width: 140px;
+        height: 25px;
+    }
+    .container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .text h3 {
+        font-size: 13px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+}
+
+/* planshet razmeri min. 600px max. 1024px */
+@media (min-width: 600px) and (max-width:1024px){
+    body{
+        background-color: yellow;
+    }
+    .card {
+        background-color: white;
+    }
+}
+
+/* kompyter razmeri min.1024px */
+@media(min-width:1024px) {
+    body{
+        background-color: #ccc;
+    }
+    .card {
+        background-color: white;
+    }
+}
